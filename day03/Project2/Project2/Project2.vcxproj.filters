@@ -21,7 +21,7 @@
     <ClCompile Include="struct02.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="xc.cpp">
+    <ClCompile Include="RacingCarEnum01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="struct01.cpp">
@@ -36,5 +36,31 @@
     <ClCompile Include="0223_03.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="RacingCarEnum02.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RacingCarClassBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RacingMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="File_divi01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="File_divi.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Car.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="File_divi.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
