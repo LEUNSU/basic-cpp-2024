@@ -3,20 +3,23 @@
 
 using namespace std;
 
-void Human::human(char name, int age, char job) {
-
+void Human::human(const char *pname, int aage, const char *pjob) 
+{
+	strcpy(name, pname);
+	age = aage;
+	strcpy(job, pjob);	
 }
 
 void Human:: humanInfo() {
-	std::cout << "³ª´Â" << name << "ÀÔ´Ï´Ù." << std::endl;
-	std::cout << "³ªÀÌ´Â" << age << "ÀÔ´Ï´Ù." << std::endl;
-	std::cout << "Á÷¾÷Àº" << job << "ÀÔ´Ï´Ù." << std::endl;
+	std::cout << "ë‚˜ëŠ”" << name << "ìž…ë‹ˆë‹¤." << std::endl;
+	std::cout << "ë‚˜ì´ëŠ”" << age << "ìž…ë‹ˆë‹¤." << std::endl;
+	std::cout << "ì§ì—…ì€" << job << "ìž…ë‹ˆë‹¤." << std::endl;
 
 }
 
 int main()
 {	
-	Human h("È«±æµ¿", 50, "¹é¼ö");	
+	Human h("í™ê¸¸ë™", 50, "ë°±ìˆ˜");	
 	h.humanInfo();					
 	return 0;
 }

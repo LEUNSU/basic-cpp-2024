@@ -16,7 +16,7 @@ private:
 	char job[20];
 
 public:
-	void human(char name, int age, char job);
+	void human(const char *pname, int aage, const char *pjob);
 	void humanInfo();
 }; 
 #endif
