@@ -10,18 +10,21 @@ private:
 	int age;
 public:
 	Person(const char* myname, int myage)
-	{
+	{	
+		cout << "생성자 호출" << endl;
 		int len = strlen(myname) + 1;
 		name = new char[len];
 		strcpy(name, myname);
 		age = myage;
 	}
-	Person(const Person & other)		// 복사생성자
+	Person(const Person & copy)		// 복사생성자
 	{	
+		cout << "깊은 복사생성자 호출" << endl;
 //		this->name = other.name; 얕은 복사
 //		this->age = other.age;
-		name = new char[strlen(copy.name) + 1];
-		strcpy(name, copy.name);
+		this->name = new char[strlen(copy.name) + 1];
+		strcpy(this->name, copy.name);
+		this->age = copy.age;		// 멤버 대 멤버 복사
 	}
 	void ShowPersonInfo() const
 	{
@@ -43,3 +46,12 @@ int main(void)
 	man2.ShowPersonInfo();
 	return 0;
 }
+
+int func(int a) {	// a = 10; num의 10을 복사해서 사용한다.
+
+	a = 10 + a;
+	return a;		// a를 리턴한다.
+}
+
+int num = 10;
+int res = func(num); // int res = a;
