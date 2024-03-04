@@ -18,14 +18,14 @@ public:
 	}
 };
 
-class PermanentWorker : public Employee
+class PermanentWorker : public Employee	// Employee클래스 상속
 {
 private:
 	int salary;		// 월 급여
 public:
 	PermanentWorker(const char* name, int money)
 		: Employee(name), salary(money)
-	{}
+	{ }
 	int GetPay() const
 	{
 		return salary;
@@ -37,7 +37,7 @@ public:
 	}
 };
 
-class EmployeeHandler
+class EmployeeHandler	// Employee객체
 {
 private:
 	Employee* empList[50];

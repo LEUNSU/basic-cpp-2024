@@ -21,9 +21,9 @@ public:
 
 int main(void)
 {
-	Third* tptr = new Third();
-	Second* sptr = tptr;
-	First* fptr = sptr;
+	Third* tptr = new Third();	
+	Second* sptr = tptr;	// Third타입 tptr이 가리키는 객체는 Second타입 포인터변수sptr 가리킴
+	First* fptr = sptr;		//Second타입 sptr이 가리키는 객체는 First타입 포인터변수fptr 가리킴
 
 	/*
 	객체 포인터 타입을 기준으로 접근 범위가 결정된다.
