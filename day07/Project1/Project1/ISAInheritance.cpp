@@ -25,7 +25,7 @@ public:
 	NotebookComp(const char* name, int initChag)	// NotebookComp »ý¼ºÀÚ
 		: Computer(name), Battery(initChag)
 	{}
-	void Charging(){ Battery += 5; }
+	void Charging() { Battery += 5; }
 	void UseBattery() { Battery -= 1; }
 	void MovingCal()
 	{

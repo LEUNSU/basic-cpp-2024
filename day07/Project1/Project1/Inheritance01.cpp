@@ -7,8 +7,8 @@ private:
 	char name[50];
 	int age;
 public:
-	Person(const char *myname, int myage)						// 何葛积己磊
-	{	
+	Person(const char* myname, int myage)						// 何葛积己磊
+	{
 		age = myage;
 		strcpy(name, myname);
 	}
@@ -25,12 +25,12 @@ public:
 class UnivStudent : public Person
 {
 private:
-	string major;		
+	string major;
 public:
 	UnivStudent(const char* myname, int myage, string major)	// 磊侥 积己磊
 		: Person(myname, myage)
 	{
-		this->major = major; 
+		this->major = major;
 	}
 	void WhoAreYou() const
 	{

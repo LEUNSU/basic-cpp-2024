@@ -37,7 +37,7 @@ int main(void)
 {
 	SoSimple sim1;
 	SoSimple sim2;
-	
+
 	SoComplex cmx1;
 	SoComplex cmx2 = cmx1;
 	SoComplex();

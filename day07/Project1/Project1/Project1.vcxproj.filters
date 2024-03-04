@@ -18,7 +18,22 @@
     <ClCompile Include="ConstStaticMember.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DerivDestOrder.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DestModel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="EmployeeManager1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="HASInheritance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ISAInheritance.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Mutable.cpp">
@@ -30,25 +45,10 @@
     <ClCompile Include="PersonClass.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PubllicStaticMember.cpp">
+    <ClCompile Include="PublicStaticMember.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="StaticMember.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="inheritance01.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DerivDestOrder.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DestModel.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ISAlnheritance.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="HASInheritance.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="test.cpp">

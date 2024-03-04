@@ -23,18 +23,18 @@ public:
 	}
 };
 
-class MyInfo : public Myclass 
+class MyInfo : public Myclass
 {
 private:
 	char pNumber[20];
 public:
-	MyInfo(const char* myname, int myage, const char *myNumber)
+	MyInfo(const char* myname, int myage, const char* myNumber)
 		: Myclass(myname, myage)
 	{
 		strcpy(pNumber, myNumber);
 	}
 	void printMyinfo() const
-	{	
+	{
 		WhatYourName();
 		HowOldAreYou();
 		cout << "전화번호는 " << pNumber << "입니다." << endl;

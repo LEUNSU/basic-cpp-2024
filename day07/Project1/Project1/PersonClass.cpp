@@ -22,14 +22,14 @@ public:
 		strcpy(this->name, copy.name);
 		this->age = copy.age;
 	}
-	
+
 	void personInfo() const
 	{
 		cout << "이름: " << name << endl;
 		cout << "나이: " << age << endl;
 	}
 
-	~Person()	
+	~Person()
 	{
 		delete[]name;
 	}

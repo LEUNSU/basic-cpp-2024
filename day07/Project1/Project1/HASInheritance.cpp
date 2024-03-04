@@ -9,7 +9,7 @@ private:
 public:
 	Gun(int bnum) : bullet(bnum)
 	{ }
-	
+
 	void Shot()
 	{
 		cout << "BBANG!" << endl;
@@ -20,7 +20,7 @@ public:
 	}
 };
 
-class Police : public Gun 
+class Police : public Gun
 {
 private:
 	int handcuffs;	// 소유한 수갑의 수
