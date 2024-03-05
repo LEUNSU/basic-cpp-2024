@@ -7,13 +7,13 @@ class Computer
 private:
 	char owner[50];
 public:
-	Computer(const char* name)		// computer »ı¼ºÀÚ
+	Computer(const char* name)		// computer ìƒì„±ì
 	{
 		strcpy(owner, name);
 	}
 	void Calculate()
 	{
-		cout << "¿äÃ» ³»¿ëÀ» °è»êÇÕ´Ï´Ù." << endl;
+		cout << "ìš”ì²­ ë‚´ìš©ì„ ê³„ì‚°í•©ë‹ˆë‹¤." << endl;
 	}
 };
 
@@ -22,7 +22,7 @@ class NotebookComp : public Computer
 private:
 	int Battery;
 public:
-	NotebookComp(const char* name, int initChag)	// NotebookComp »ı¼ºÀÚ
+	NotebookComp(const char* name, int initChag)	// NotebookComp ìƒì„±ì
 		: Computer(name), Battery(initChag)
 	{}
 	void Charging() { Battery += 5; }
@@ -31,10 +31,10 @@ public:
 	{
 		if (GetBatteryInfo() < 1)
 		{
-			cout << "ÃæÀüÀÌ ÇÊ¿äÇÕ´Ï´Ù." << endl;
+			cout << "ì¶©ì „ì´ í•„ìš”í•©ë‹ˆë‹¤." << endl;
 			return;
 		}
-		cout << "ÀÌµ¿ÇÏ¸é¼­ ";
+		cout << "ì´ë™í•˜ë©´ì„œ ";
 		Calculate();
 		UseBattery();
 	}
@@ -46,7 +46,7 @@ class TableNotebook : public NotebookComp
 private:
 	char regstPenModel[50];
 public:
-	TableNotebook(const char* name, int initchag, const char* pen)	// TableNotebook »ı¼ºÀÚ
+	TableNotebook(const char* name, int initchag, const char* pen)	// TableNotebook ìƒì„±ì
 		: NotebookComp(name, initchag)
 	{
 		strcpy(regstPenModel, pen);
@@ -55,23 +55,23 @@ public:
 	{
 		if (GetBatteryInfo() < 1)
 		{
-			cout << "ÃæÀüÀÌ ÇÊ¿äÇÕ´Ï´Ù." << endl;
+			cout << "ì¶©ì „ì´ í•„ìš”í•©ë‹ˆë‹¤." << endl;
 			return;
 		}
 		if (strcmp(regstPenModel, penInfo) != 0)
 		{
-			cout << "µî·ÏµÈ ÆæÀÌ ¾Æ´Õ´Ï´Ù.";
+			cout << "ë“±ë¡ëœ íœì´ ì•„ë‹™ë‹ˆë‹¤.";
 			return;
 		}
-		cout << "ÇÊ±â ³»¿ëÀ» Ã³¸®ÇÕ´Ï´Ù." << endl;
+		cout << "í•„ê¸° ë‚´ìš©ì„ ì²˜ë¦¬í•©ë‹ˆë‹¤." << endl;
 		UseBattery();
 	}
 };
 
 int main(void)
 {
-	NotebookComp nc("ÀÌ¼öÁ¾", 5);
-	TableNotebook tn("Á¤¼ö¿µ", 5, "ISE-241-242");
+	NotebookComp nc("ì´ìˆ˜ì¢…", 5);
+	TableNotebook tn("ì •ìˆ˜ì˜", 5, "ISE-241-242");
 	nc.MovingCal();
 	tn.Write("ISE - 241 - 242");
 	return 0;

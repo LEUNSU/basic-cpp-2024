@@ -15,11 +15,11 @@ public:
 	}
 	void WhatYourName() const
 	{
-		cout << "³» ÀÌ¸§Àº " << name << "ÀÌ°í," << endl;
+		cout << "ë‚´ ì´ë¦„ì€ " << name << "ì´ê³ ," << endl;
 	}
 	void HowOldAreYou() const
 	{
-		cout << "³ªÀÌ´Â " << age << "ÀÌ¸ç," << endl;
+		cout << "ë‚˜ì´ëŠ” " << age << "ì´ë©°," << endl;
 	}
 };
 
@@ -37,13 +37,13 @@ public:
 	{
 		WhatYourName();
 		HowOldAreYou();
-		cout << "ÀüÈ­¹øÈ£´Â " << pNumber << "ÀÔ´Ï´Ù." << endl;
+		cout << "ì „í™”ë²ˆí˜¸ëŠ” " << pNumber << "ìž…ë‹ˆë‹¤." << endl;
 	}
 };
 
 int main(void)
 {
-	MyInfo p("ÀÌÀº¼ö", 26, "010-5171-3978");
+	MyInfo p("ì´ì€ìˆ˜", 26, "010-5171-3978");
 	p.printMyinfo();
 	return 0;
 }

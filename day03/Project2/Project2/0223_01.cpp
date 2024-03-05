@@ -2,7 +2,7 @@
 
 int main()
 {
-	const int num = 10;	// »ó¼ö¸¦ ¼±¾ğÇÒ ¶§´Â ¹Ù·Î ÃÊ±âÈ­¸¦ ÇØ¾ß¸¸ ÇÑ´Ù.
+	const int num = 10;	// ìƒìˆ˜ë¥¼ ì„ ì–¸í•  ë•ŒëŠ” ë°”ë¡œ ì´ˆê¸°í™”ë¥¼ í•´ì•¼ë§Œ í•œë‹¤.
 	const int& ref = num;		//
 
 	return 0;
@@ -19,7 +19,7 @@ using namespace std;
 
 char* MakeStrAdr(int len)
 {
-	char* str = (char*)malloc(sizeof(char) * len);	// C:heap ¿µ¿ª¿¡ 20ByteÅ©±â·Î ¸Ş¸ğ¸® ÇÒ´ç
+	char* str = (char*)malloc(sizeof(char) * len);	// C:heap ì˜ì—­ì— 20Byteí¬ê¸°ë¡œ ë©”ëª¨ë¦¬ í• ë‹¹
 	printf("char size: %llu\n", sizeof(char));
 	return str;
 

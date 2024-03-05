@@ -6,11 +6,11 @@ class MyClass {
 
 public:
 	MyClass() {
-		cout << "»ý¼ºÀÚ È£Ãâ: MyClass()" << endl;
+		cout << "ìƒì„±ìž í˜¸ì¶œ: MyClass()" << endl;
 		num = 10;
 	}
 	MyClass(int anum) {
-		cout << "»ý¼ºÀÚ È£Ãâ: MyClass(int )" << endl;
+		cout << "ìƒì„±ìž í˜¸ì¶œ: MyClass(int )" << endl;
 		num = anum;
 	}
 	void MyClassInfo() {
@@ -21,7 +21,7 @@ public:
 int main()
 {
 	//MyClass* m = new MyClass(); 
-	MyClass m1;			// °´Ã¼»ý¼º ¸í·ÉÀ¸·Î »ý¼ºÀÚ´Â ÀÚµ¿ È£ÃâµÈ´Ù.
+	MyClass m1;			// ê°ì²´ìƒì„± ëª…ë ¹ìœ¼ë¡œ ìƒì„±ìžëŠ” ìžë™ í˜¸ì¶œëœë‹¤.
 	m1.MyClassInfo();
 	MyClass m2(20);
 	m2.MyClassInfo();

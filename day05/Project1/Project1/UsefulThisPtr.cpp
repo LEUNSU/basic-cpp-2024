@@ -5,15 +5,15 @@ using namespace std;
 class TwoNumber
 {
 private:
-    int num1; // Ã¹ ¹øÂ° Á¤¼ö¸¦ ÀúÀåÇÏ´Â ¸â¹ö º¯¼ö
-    int num2; // µÎ ¹øÂ° Á¤¼ö¸¦ ÀúÀåÇÏ´Â ¸â¹ö º¯¼ö
+    int num1; // ì²« ë²ˆì§¸ ì •ìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” ë©¤ë²„ ë³€ìˆ˜
+    int num2; // ë‘ ë²ˆì§¸ ì •ìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” ë©¤ë²„ ë³€ìˆ˜
 
 public:
-    // »ı¼ºÀÚ: µÎ °³ÀÇ Á¤¼ö¸¦ ¹Ş¾Æ ¸â¹ö º¯¼ö¸¦ ÃÊ±âÈ­
+    // ìƒì„±ì: ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ë°›ì•„ ë©¤ë²„ ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™”
     TwoNumber(int num1, int num2)
     {
-        this->num1 = num1; // Ã¹ ¹øÂ° Á¤¼ö¸¦ ¸â¹ö º¯¼ö¿¡ ÇÒ´ç
-        this->num2 = num2; // µÎ ¹øÂ° Á¤¼ö¸¦ ¸â¹ö º¯¼ö¿¡ ÇÒ´ç
+        this->num1 = num1; // ì²« ë²ˆì§¸ ì •ìˆ˜ë¥¼ ë©¤ë²„ ë³€ìˆ˜ì— í• ë‹¹
+        this->num2 = num2; // ë‘ ë²ˆì§¸ ì •ìˆ˜ë¥¼ ë©¤ë²„ ë³€ìˆ˜ì— í• ë‹¹
     }
     /*
     TwoNumber(int num1, int num2) : num1(num1), num2(num2)
@@ -21,27 +21,27 @@ public:
         // empty
        }
     */
-    // µÎ Á¤¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÔ¼ö
+    // ë‘ ì •ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
     void ShowTwoNumber()
     {
-        cout << "First number: " << this->num1 << endl; // Ã¹ ¹øÂ° Á¤¼ö Ãâ·Â
-        cout << "Second number: " << this->num2 << endl; // µÎ ¹øÂ° Á¤¼ö Ãâ·Â
+        cout << "First number: " << this->num1 << endl; // ì²« ë²ˆì§¸ ì •ìˆ˜ ì¶œë ¥
+        cout << "Second number: " << this->num2 << endl; // ë‘ ë²ˆì§¸ ì •ìˆ˜ ì¶œë ¥
     }
 };
 
 int main(void) {
-    TwoNumber two(2, 4); // TwoNumber Å¬·¡½ºÀÇ °´Ã¼ »ı¼º ¹× ÃÊ±âÈ­
-    two.ShowTwoNumber(); // °´Ã¼ÀÇ µÎ Á¤¼ö Ãâ·Â
+    TwoNumber two(2, 4); // TwoNumber í´ë˜ìŠ¤ì˜ ê°ì²´ ìƒì„± ë° ì´ˆê¸°í™”
+    two.ShowTwoNumber(); // ê°ì²´ì˜ ë‘ ì •ìˆ˜ ì¶œë ¥
     return 0;
 }
 
-/* Ãß°¡ ¼³¸í Á¸
-1. TwoNumber Å¬·¡½º
-=> num1°ú num2¶ó´Â µÎ °³ÀÇ ¸â¹ö º¯¼ö¸¦ °¡Áö°í ÀÖÀ½.
+/* ì¶”ê°€ ì„¤ëª… ì¡´
+1. TwoNumber í´ë˜ìŠ¤
+=> num1ê³¼ num2ë¼ëŠ” ë‘ ê°œì˜ ë©¤ë²„ ë³€ìˆ˜ë¥¼ ê°€ì§€ê³  ìˆìŒ.
 
-2. »ı¼ºÀÚ TwoNumber(int num1, int num2)
-=> µÎ °³ÀÇ ÀÎÀÚ¸¦ ¹Ş¾Æ¼­ num1°ú num2 ¸â¹ö º¯¼ö¿¡ °ªÀ» ÇÒ´ç.
+2. ìƒì„±ì TwoNumber(int num1, int num2)
+=> ë‘ ê°œì˜ ì¸ìë¥¼ ë°›ì•„ì„œ num1ê³¼ num2 ë©¤ë²„ ë³€ìˆ˜ì— ê°’ì„ í• ë‹¹.
 
-3. ShowTwoNumber() ÇÔ¼ö
-=> °´Ã¼ÀÇ num1°ú num2 ¸â¹ö º¯¼ö¸¦ Ãâ·Â.
+3. ShowTwoNumber() í•¨ìˆ˜
+=> ê°ì²´ì˜ num1ê³¼ num2 ë©¤ë²„ ë³€ìˆ˜ë¥¼ ì¶œë ¥.
 */

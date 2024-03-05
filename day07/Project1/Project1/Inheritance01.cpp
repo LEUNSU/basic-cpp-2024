@@ -7,7 +7,7 @@ private:
 	char name[50];
 	int age;
 public:
-	Person(const char* myname, int myage)						// ºÎ¸ð»ý¼ºÀÚ
+	Person(const char* myname, int myage)						// ä½•è‘›ç§¯å·±ç£Š
 	{
 		age = myage;
 		strcpy(name, myname);
@@ -27,7 +27,7 @@ class UnivStudent : public Person
 private:
 	string major;
 public:
-	UnivStudent(const char* myname, int myage, string major)	// ÀÚ½Ä »ý¼ºÀÚ
+	UnivStudent(const char* myname, int myage, string major)	// ç£Šä¾¥ ç§¯å·±ç£Š
 		: Person(myname, myage)
 	{
 		this->major = major;

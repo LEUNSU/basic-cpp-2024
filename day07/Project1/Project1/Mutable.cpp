@@ -6,7 +6,7 @@ class SoSimple
 {
 private:
 	int num1;
-	mutable int num2;		// const ÇÔ¼ö¿¡ ´ëÇØ ¿¹¿Ü¸¦ µĞ´Ù!
+	mutable int num2;		// const í•¨ìˆ˜ì— ëŒ€í•´ ì˜ˆì™¸ë¥¼ ë‘”ë‹¤!
 public:
 	SoSimple(int n1, int n2)
 		: num1(n1), num2(n2)
@@ -17,7 +17,7 @@ public:
 	}
 	void CopyToNum2() const
 	{
-		num2 = num1;		// °ªÀÇ º¯°æÀ» Çã¶ôÇÑ´Ù.
+		num2 = num1;		// ê°’ì˜ ë³€ê²½ì„ í—ˆë½í•œë‹¤.
 	}
 };
 

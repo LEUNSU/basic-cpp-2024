@@ -9,29 +9,29 @@ private:
 	char* name;
 	int age;
 public:
-	Person(const char* myname, int myage)	// »ı¼ºÀÚ
+	Person(const char* myname, int myage)	// ìƒì„±ì
 	{	
-		cout << "»ı¼ºÀÚ È£Ãâ" << endl;
+		cout << "ìƒì„±ì í˜¸ì¶œ" << endl;
 		int len = strlen(myname) + 1;
 		name = new char[len];
 		strcpy(name, myname);
 		age = myage;
 	}
-	Person(const Person & copy)		// º¹»ç»ı¼ºÀÚ
+	Person(const Person & copy)		// ë³µì‚¬ìƒì„±ì
 	{	
-		cout << "±íÀº º¹»ç»ı¼ºÀÚ È£Ãâ" << endl;
-//		this->name = other.name; ¾èÀº º¹»ç
+		cout << "ê¹Šì€ ë³µì‚¬ìƒì„±ì í˜¸ì¶œ" << endl;
+//		this->name = other.name; ì–•ì€ ë³µì‚¬
 //		this->age = other.age;
-		this->name = new char[strlen(copy.name) + 1]; // º¹»çµÉ °´Ã¼ÀÇ ÀÌ¸§À» º¹»çÇÏ±â À§ÇØ ÇÊ¿äÇÑ ¸Ş¸ğ¸®¸¦ µ¿ÀûÀ¸·Î ÇÒ´çÇÏ°í ÀÌ¸§À» º¹»ç
+		this->name = new char[strlen(copy.name) + 1]; // ë³µì‚¬ë  ê°ì²´ì˜ ì´ë¦„ì„ ë³µì‚¬í•˜ê¸° ìœ„í•´ í•„ìš”í•œ ë©”ëª¨ë¦¬ë¥¼ ë™ì ìœ¼ë¡œ í• ë‹¹í•˜ê³  ì´ë¦„ì„ ë³µì‚¬
 		strcpy(this->name, copy.name);
-		this->age = copy.age;		// ¸â¹ö ´ë ¸â¹ö º¹»ç. º¹»çµÉ °´Ã¼ÀÇ ³ªÀÌ¸¦ º¹»ç
+		this->age = copy.age;		// ë©¤ë²„ ëŒ€ ë©¤ë²„ ë³µì‚¬. ë³µì‚¬ë  ê°ì²´ì˜ ë‚˜ì´ë¥¼ ë³µì‚¬
 	}
 	void ShowPersonInfo() const
 	{
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "³ªÀÌ: " << age << endl;
+		cout << "ì´ë¦„: " << name << endl;
+		cout << "ë‚˜ì´: " << age << endl;
 	}
-	~Person()	// ¼Ò¸êÀÚ
+	~Person()	// ì†Œë©¸ì
 	{
 		delete[]name;
 		cout << "called destructor!" << endl;
@@ -40,17 +40,17 @@ public:
 
 int main(void)
 {
-	Person man1("Lee dong woo", 29);	// Person Å¬·¡½ºÀÇ °´Ã¼¸¦ »ı¼ºÇÏ°í ÃÊ±âÈ­
-	Person man2 = man1;			// º¹»ç »ı¼ºÀÚ¸¦ È£ÃâÇÏ¿© »õ·Î¿î °´Ã¼¸¦ ÃÊ±âÈ­
+	Person man1("Lee dong woo", 29);	// Person í´ë˜ìŠ¤ì˜ ê°ì²´ë¥¼ ìƒì„±í•˜ê³  ì´ˆê¸°í™”
+	Person man2 = man1;			// ë³µì‚¬ ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ì—¬ ìƒˆë¡œìš´ ê°ì²´ë¥¼ ì´ˆê¸°í™”
 	man1.ShowPersonInfo();
 	man2.ShowPersonInfo();
 	return 0;
 }
 
-int func(int a) {	// a = 10; numÀÇ 10À» º¹»çÇØ¼­ »ç¿ëÇÑ´Ù.
+int func(int a) {	// a = 10; numì˜ 10ì„ ë³µì‚¬í•´ì„œ ì‚¬ìš©í•œë‹¤.
 
 	a = 10 + a;
-	return a;		// a¸¦ ¸®ÅÏÇÑ´Ù.
+	return a;		// aë¥¼ ë¦¬í„´í•œë‹¤.
 }
 
 int num = 10;

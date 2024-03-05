@@ -1,6 +1,6 @@
 #include <iostream>
 
-/*#define SQUARE(x) ((x)*(x)) // ∏≈≈©∑Œ
+/*#define SQUARE(x) ((x)*(x)) // Îß§ÌÅ¨Î°ú
 
 int main(void)
 {

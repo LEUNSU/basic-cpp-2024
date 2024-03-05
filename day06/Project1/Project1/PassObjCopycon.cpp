@@ -11,21 +11,21 @@ public:
 	{
 		cout << "Called SoSimple(const SoSimple& copy)" << endl;
 	}
-	void ShowData()					// ¸â¹öÇÔ¼ö -> °´Ã¼ »ı¼º ÈÄ¿¡ »ç¿ë°¡´É
+	void ShowData()					// ë©¤ë²„í•¨ìˆ˜ -> ê°ì²´ ìƒì„± í›„ì— ì‚¬ìš©ê°€ëŠ¥
 	{
 		cout << "num: " << num << endl;
 	}
 };
 
-void SimpleFuncObj(SoSimple ob)		// Å¬·¡½º¿¡ ¼Ò¼ÓµÇ¾îÀÖÁö ¾ÊÀ½. Àü¿ªÇÔ¼ö -> ¾Æ¹«³ª ¹Ù·Î Á¢±Ù °¡´É
+void SimpleFuncObj(SoSimple ob)		// í´ë˜ìŠ¤ì— ì†Œì†ë˜ì–´ìˆì§€ ì•ŠìŒ. ì „ì—­í•¨ìˆ˜ -> ì•„ë¬´ë‚˜ ë°”ë¡œ ì ‘ê·¼ ê°€ëŠ¥
 {
 	ob.ShowData();
 }
 int main(void)
 {
 	SoSimple obj(7);
-	cout << "ÇÔ¼öÈ£Ãâ Àü" << endl;
+	cout << "í•¨ìˆ˜í˜¸ì¶œ ì „" << endl;
 	SimpleFuncObj(obj);
-	cout << "ÇÔ¼öÈ£Ãâ ÈÄ" << endl;
+	cout << "í•¨ìˆ˜í˜¸ì¶œ í›„" << endl;
 	return 0;
 }

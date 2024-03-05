@@ -6,7 +6,7 @@ bool Point::InitMembers(int xpos, int ypos)
 {
 	if (xpos < 0 || ypos < 0)
 	{
-		cout << "¹þ¾î³­ ¹üÀ§ÀÇ °ª Àü´Þ" << endl;
+		cout << "ë²—ì–´ë‚œ ë²”ìœ„ì˜ ê°’ ì „ë‹¬" << endl;
 		return false;
 	}
 	x = xpos;
@@ -14,12 +14,12 @@ bool Point::InitMembers(int xpos, int ypos)
 	return true;
 }
 
-int Point::GetX() const		// constÇÔ¼ö!
+int Point::GetX() const		// constí•¨ìˆ˜!
 {
 	return x;
 }
 
-int Point::GetY() const		// constÇÔ¼ö¿¡ ´ëÇØ¼­´Â Àá½Ã ÈÄ¿¡ ¼³¸í
+int Point::GetY() const		// constí•¨ìˆ˜ì— ëŒ€í•´ì„œëŠ” ìž ì‹œ í›„ì— ì„¤ëª…
 {
 	return y;
 }
@@ -28,7 +28,7 @@ bool Point::SetX(int xpos)
 {
 	if (0> xpos || xpos>100)
 	{
-		cout << "¹þ¾î³­ ¹üÀ§ÀÇ °ª Àü´Þ" << endl;
+		cout << "ë²—ì–´ë‚œ ë²”ìœ„ì˜ ê°’ ì „ë‹¬" << endl;
 		return false;
 	}
 	x = xpos;
@@ -38,7 +38,7 @@ bool Point::SetY(int ypos)
 {
 	if (0 > ypos || ypos > 100)
 	{
-		cout << "¹þ¾î³­ ¹üÀ§ÀÇ °ª Àü´Þ" << endl;
+		cout << "ë²—ì–´ë‚œ ë²”ìœ„ì˜ ê°’ ì „ë‹¬" << endl;
 		return false;
 	}
 	y = ypos;

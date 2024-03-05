@@ -31,10 +31,10 @@ int main()
 	char op;
 	int n1, n2;
 
-	cout << "¿¬»êÀÚ ÀÔ·Â > ";
+	cout << "ì—°ì‚°ì ì…ë ¥ > ";
 	cin >> op;
 
-	cout << "Á¤¼ö ÀÔ·Â > ";
+	cout << "ì •ìˆ˜ ì…ë ¥ > ";
 	cin >> n1 >> n2;
 
 	/*cout << "n1:" << n1 << endl;

@@ -8,12 +8,12 @@ class Person
 private:
 	char* name;
 public:
-	Person(const char* myname)								// ºÎ¸ğ »ı¼ºÀÚ
+	Person(const char* myname)								// ë¶€ëª¨ ìƒì„±ì
 	{
 		name = new char[strlen(myname) + 1];
 		strcpy(name, myname);
 	}
-	~Person()												// ºÎ¸ğ ¼Ò¸êÀÚ
+	~Person()												// ë¶€ëª¨ ì†Œë©¸ì
 	{
 		delete[]name;
 	}
@@ -27,13 +27,13 @@ class UnivStudent : public Person
 private:
 	char* major;
 public:
-	UnivStudent(const char* myname, const char* mymajor)	// ÀÚ½Ä »ı¼ºÀÚ
+	UnivStudent(const char* myname, const char* mymajor)	// ìì‹ ìƒì„±ì
 		: Person(myname)
 	{
 		major = new char[strlen(mymajor) + 1];
 		strcpy(major, mymajor);
 	}
-	~UnivStudent()											// ÀÚ½Ä ¼Ò¸êÀÚ
+	~UnivStudent()											// ìì‹ ì†Œë©¸ì
 	{
 		delete[]major;
 	}

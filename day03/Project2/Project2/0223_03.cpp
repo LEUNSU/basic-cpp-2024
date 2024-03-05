@@ -5,7 +5,7 @@ using namespace std;
 class Simple
 {
 public:
-	Simple()								// »ý¼ºÀÚ(Å¬·¡½ºÀÌ¸§°ú °°Àº ¸Þ¼­µå) 
+	Simple()								// ìƒì„±ìž(í´ëž˜ìŠ¤ì´ë¦„ê³¼ ê°™ì€ ë©”ì„œë“œ) 
 	{
 		cout << "I'm simple constuctor!" << endl;
 	}
@@ -14,18 +14,18 @@ public:
 int main(void)
 {
 	cout << "case1: ";
-	Simple* sp1 = new Simple;				// new ¿¬»êÀÚ¸¦ ÅëÇÑ °´Ã¼»ý¼º
+	Simple* sp1 = new Simple;				// new ì—°ì‚°ìžë¥¼ í†µí•œ ê°ì²´ìƒì„±
 	// Aaa *ap = new Aaa;
 	cout << "case2: ";
-	Simple* sp2 = (Simple*)malloc(sizeof(Simple) * 1); // malloc ÇÔ¼ö·Î ¸Þ¸ð¸®¿¡ ÇÒ´ç 
+	Simple* sp2 = (Simple*)malloc(sizeof(Simple) * 1); // malloc í•¨ìˆ˜ë¡œ ë©”ëª¨ë¦¬ì— í• ë‹¹ 
 
 	cout << endl << "end of main" << endl;
-	delete sp1;								// µ¿ÀûÀ¸·Î ÇÒ´çµÈ °´Ã¼¸¦ »èÁ¦, °´Ã¼¸¦ ¹ÝÈ¯ÇÑ´Ù.
-	free(sp2);								// malloc¿¡ ÇÒ´çµÈ ¸Þ¸ð¸®¸¦ »èÁ¦
+	delete sp1;								// ë™ì ìœ¼ë¡œ í• ë‹¹ëœ ê°ì²´ë¥¼ ì‚­ì œ, ê°ì²´ë¥¼ ë°˜í™˜í•œë‹¤.
+	free(sp2);								// mallocì— í• ë‹¹ëœ ë©”ëª¨ë¦¬ë¥¼ ì‚­ì œ
 	return 0;
 }
 
 /*
-1. delete ¿¬»êÀº µ¿ÀûÀ¸·Î ÇÒ´çµÈ °´Ã¼¸¦ »èÁ¦ÇÏ°í ÇØ´ç °´Ã¼ÀÇ ¼Ò¸êÀÚ¸¦ È£Ãâ.
-2. malloc ÇÔ¼ö·Î ÇÒ´çµÈ ¸Þ¸ð¸®¿¡ ´ëÇØ -> free ÇÔ¼ö¸¦ È£ÃâÇÏ¿© ¸Þ¸ð¸®¸¦ ÇØÁ¦ÇØ¾ß ÇÔ.
+1. delete ì—°ì‚°ì€ ë™ì ìœ¼ë¡œ í• ë‹¹ëœ ê°ì²´ë¥¼ ì‚­ì œí•˜ê³  í•´ë‹¹ ê°ì²´ì˜ ì†Œë©¸ìžë¥¼ í˜¸ì¶œ.
+2. malloc í•¨ìˆ˜ë¡œ í• ë‹¹ëœ ë©”ëª¨ë¦¬ì— ëŒ€í•´ -> free í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ì—¬ ë©”ëª¨ë¦¬ë¥¼ í•´ì œí•´ì•¼ í•¨.
 */

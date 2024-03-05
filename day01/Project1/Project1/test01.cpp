@@ -1,29 +1,29 @@
-#include <iostream>  // Çì´õÆÄÀÏ
+#include <iostream>  // í—¤ë”íŒŒì¼
 
-/* 1. ÇÔ¼ö Á¤ÀÇ
-void func { // ÇÔ¼öÀÌ¸§Àº funcÀÌ°í
-			// ÀÔ·ÂÀº ¾ø°í Ãâ·ÂÀº ¾ø´Ù.
+/* 1. í•¨ìˆ˜ ì •ì˜
+void func { // í•¨ìˆ˜ì´ë¦„ì€ funcì´ê³ 
+			// ìž…ë ¥ì€ ì—†ê³  ì¶œë ¥ì€ ì—†ë‹¤.
 }
 
-void func1(int a) { // ÇÔ¼öÀÌ¸§Àº func1ÀÌ°í
-					// ÀÔ·ÂÀº int aÀÌ°í Ãâ·Â¾ø´Ù.
+void func1(int a) { // í•¨ìˆ˜ì´ë¦„ì€ func1ì´ê³ 
+					// ìž…ë ¥ì€ int aì´ê³  ì¶œë ¥ì—†ë‹¤.
 }
 
-int func2(){	// ÇÔ¼öÀÌ¸§Àº func2ÀÌ°í
-				// ÀÔ·ÂÀº ¾ø°í, Ãâ·ÂÀº intÀÌ´Ù.
+int func2(){	// í•¨ìˆ˜ì´ë¦„ì€ func2ì´ê³ 
+				// ìž…ë ¥ì€ ì—†ê³ , ì¶œë ¥ì€ intì´ë‹¤.
 
-	return int(Á¤¼ö);
+	return int(ì •ìˆ˜);
 
-* {} = ÀÖÀ¸¸é ¹üÀ§(ÆÄÀÌ½ã ¿Ü¿¡ Áß°ýÈ£ ¾²±â), ÆÄÀÌ½ã = µé¿©¾²±â
+* {} = ìžˆìœ¼ë©´ ë²”ìœ„(íŒŒì´ì¬ ì™¸ì— ì¤‘ê´„í˜¸ ì“°ê¸°), íŒŒì´ì¬ = ë“¤ì—¬ì“°ê¸°
 }
 */ 
 
-/* 2. ÇÔ¼ö È£Ãâ
-* func();	// ÇÔ¼ö¸Ó¸®¿¡¼­ Ãâ·ÂÀ» »ý·«ÇÑ´Ù.
+/* 2. í•¨ìˆ˜ í˜¸ì¶œ
+* func();	// í•¨ìˆ˜ë¨¸ë¦¬ì—ì„œ ì¶œë ¥ì„ ìƒëžµí•œë‹¤.
 * func1();
 * func2();
 */
 
-// numÀÌ¶ó´Â º¯¼ö¿¡ 10À» ÀúÀåÇÏÀÚ.
-int num;	// º¯¼ö ¼±¾ðÀ» ¸ÕÀú ÇÏ°í
-num = 10;	// º¯¼ö¿¡ °ªÀ» ´ëÀÔÇÑ´Ù.
+// numì´ë¼ëŠ” ë³€ìˆ˜ì— 10ì„ ì €ìž¥í•˜ìž.
+int num;	// ë³€ìˆ˜ ì„ ì–¸ì„ ë¨¼ì € í•˜ê³ 
+num = 10;	// ë³€ìˆ˜ì— ê°’ì„ ëŒ€ìž…í•œë‹¤.

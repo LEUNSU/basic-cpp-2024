@@ -4,8 +4,8 @@ using namespace std;
 class Point
 {
 public:
-	int x;		// xÁÂÇ¥ÀÇ ¹üÀ§´Â 0ÀÌ»ó 100ÀÌÇÏ
-	int y;		// yÁÂÇ¥ÀÇ ¹üÀ§´Â 0ÀÌ»ó 100ÀÌÇÏ
+	int x;		// xì¢Œí‘œì˜ ë²”ìœ„ëŠ” 0ì´ìƒ 100ì´í•˜
+	int y;		// yì¢Œí‘œì˜ ë²”ìœ„ëŠ” 0ì´ìƒ 100ì´í•˜
 };
 
 class Rectangle
@@ -17,9 +17,9 @@ public:
 public:
 	void ShowRecInfo()
 	{
-		cout << "ÁÂ »ó´Ü: " << '[' << upLeft.x << ", ";
+		cout << "ì¢Œ ìƒë‹¨: " << '[' << upLeft.x << ", ";
 		cout << upLeft.y << ']' << endl;
-		cout << "¿ì ÇÏ´Ü" << '[' << lowRight.x << ", ";
+		cout << "ìš° í•˜ë‹¨" << '[' << lowRight.x << ", ";
 		cout << lowRight.y << ']' << endl << endl;
 	}
 };

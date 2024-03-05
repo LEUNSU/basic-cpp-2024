@@ -1,5 +1,5 @@
 /*
-  ¹Ýº¹Á¦¾î¹® : while¹®
+  ë°˜ë³µì œì–´ë¬¸ : whileë¬¸
 */
 
 /*#include <iostream>

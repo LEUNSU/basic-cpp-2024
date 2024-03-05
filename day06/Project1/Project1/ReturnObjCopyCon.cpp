@@ -24,7 +24,7 @@ public:
 };
 SoSimple SimpleFuncObj(SoSimple ob)
 {
-	cout << "return ÀÌÀü" << endl;
+	cout << "return ì´ì „" << endl;
 	return ob;
 }
 

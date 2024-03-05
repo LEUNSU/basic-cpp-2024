@@ -1,7 +1,7 @@
 # include <iostream>
 
-int main(void)	// °ýÈ£°¡ µé¾î °£ °Í = ÀÔ·Â °ª(ÀÔ·Â°ª = ÀÖ´Ù ¾ø´Ù), main = ÇÔ¼ö¸í, int = ÇÔ¼öÀÇ Ãâ·Â, ÀüÃ¼= ÇÔ¼öÀÇ Á¤ÀÇ
-	// ¸Ó¸® = 3Çà, ¸öÃ¼ = ¸Ó¸® ¹Ø {} µé¾î°£°Í, void = Ãâ·Â°ª 
+int main(void)	// ê´„í˜¸ê°€ ë“¤ì–´ ê°„ ê²ƒ = ìž…ë ¥ ê°’(ìž…ë ¥ê°’ = ìžˆë‹¤ ì—†ë‹¤), main = í•¨ìˆ˜ëª…, int = í•¨ìˆ˜ì˜ ì¶œë ¥, ì „ì²´= í•¨ìˆ˜ì˜ ì •ì˜
+	// ë¨¸ë¦¬ = 3í–‰, ëª¸ì²´ = ë¨¸ë¦¬ ë°‘ {} ë“¤ì–´ê°„ê²ƒ, void = ì¶œë ¥ê°’ 
 {
 	int num = 20;
 	std::cout << "Hello world!" << std::endl;

@@ -1,5 +1,5 @@
 /*
-  ¼±ÅÃÁ¦¾î¹® : switch¹®
+  ì„ íƒì œì–´ë¬¸ : switchë¬¸
 */
 
 #include <iostream>
@@ -9,21 +9,21 @@ using namespace std;
 int main()
 {
 	int inKey;
-	cout << "¼ıÀÚÀÔ·Â > ";
+	cout << "ìˆ«ìì…ë ¥ > ";
 	cin >> inKey;
 
 	switch (inKey) {
 	case 1:
-		cout << "1ÀÔ´Ï´Ù." << endl;
+		cout << "1ì…ë‹ˆë‹¤." << endl;
 		break;
 	case 2:
-		cout << "2ÀÔ´Ï´Ù." << endl;
+		cout << "2ì…ë‹ˆë‹¤." << endl;
 		break;
 	case 3:
-		cout << "3ÀÔ´Ï´Ù." << endl;
+		cout << "3ì…ë‹ˆë‹¤." << endl;
 		break;
 	default:
-		cout << "ÀÌ°Íµµ Àú°Íµµ ¾Æ´Õ´Ï´Ù." << endl; 
+		cout << "ì´ê²ƒë„ ì €ê²ƒë„ ì•„ë‹™ë‹ˆë‹¤." << endl; 
 		break;
 	}
 

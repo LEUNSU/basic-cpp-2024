@@ -3,7 +3,7 @@ using namespace std;
 
 void Counter()
 {
-	static int cnt;		// Áö¿ªº¯¼ö¿¡ staticÀ» ºÙÀÌ¸é, Áö¿ª + Àü¿ª
+	static int cnt;		// ì§€ì—­ë³€ìˆ˜ì— staticì„ ë¶™ì´ë©´, ì§€ì—­ + ì „ì—­
 	// int cnt = 0;		// 111111111
 	cnt++;
 	cout << "Current cnt: " << cnt << endl;
@@ -14,7 +14,7 @@ int main(void)
 	for (int i = 0; i < 10; i++)
 	{
 		Counter();
-		// cnt--;	// ¼±¾ğµÇ¾îÀÖ´Â ¿µ¿ª¿¡¼­ »ç¿ëµÈ´Ù. ±× ¿Ü¿¡¼­´Â »ç¿ë ¾ÈµÊ 
+		// cnt--;	// ì„ ì–¸ë˜ì–´ìˆëŠ” ì˜ì—­ì—ì„œ ì‚¬ìš©ëœë‹¤. ê·¸ ì™¸ì—ì„œëŠ” ì‚¬ìš© ì•ˆë¨ 
 	}
 	return 0;
 }

@@ -22,13 +22,13 @@ public:
 
 int main(void)
 {
-	Temporary(100);		// °´Ã¼ÀÌ¸§ÀÌ ¾øÀ½ -> ÀÌ¸§ ¾ø´Â ÀÓ½Ã°´Ã¼ // Temporary t(100); 
+	Temporary(100);		// ê°ì²´ì´ë¦„ì´ ì—†ìŒ -> ì´ë¦„ ì—†ëŠ” ì„ì‹œê°ì²´ // Temporary t(100); 
 	cout << "********** after make!" << endl << endl;
 
 	Temporary(200).ShowTemInfo();
 	cout << "********** after make!" << endl << endl;
 
-	const Temporary& ref = Temporary(300);	// ÀÓ½Ã°´Ã¼´Â ÂüÁ¶¸¦ ÇÒ ¼ö ¾øÀ½ -> const ÀÛ¼º
+	const Temporary& ref = Temporary(300);	// ì„ì‹œê°ì²´ëŠ” ì°¸ì¡°ë¥¼ í•  ìˆ˜ ì—†ìŒ -> const ì‘ì„±
 	cout << "********** end of main!" << endl << endl;
 	return 0;
 }

@@ -4,11 +4,11 @@ using namespace std;
 
 class Person {
 private:
-    char* name;  // ¹®ÀÚ¿­ Æ÷ÀÎÅÍ ¸â¹ö º¯¼ö
-    int age;     // ³ªÀÌ¸¦ ÀúÀåÇÏ´Â ¸â¹ö º¯¼ö
+    char* name;  // ë¬¸ìì—´ í¬ì¸í„° ë©¤ë²„ ë³€ìˆ˜
+    int age;     // ë‚˜ì´ë¥¼ ì €ì¥í•˜ëŠ” ë©¤ë²„ ë³€ìˆ˜
 
 public:
-    // »ı¼ºÀÚ: ÀÌ¸§°ú ³ªÀÌ¸¦ ¹Ş¾Æ ¸â¹ö º¯¼ö¸¦ ÃÊ±âÈ­
+    // ìƒì„±ì: ì´ë¦„ê³¼ ë‚˜ì´ë¥¼ ë°›ì•„ ë©¤ë²„ ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™”
     Person(const char* myname, int myage) {
         int len = static_cast<int>(strlen(myname)) + 1;
         name = new char[len];
@@ -16,7 +16,7 @@ public:
         age = myage;
     }
 
-    // ±âº» »ı¼ºÀÚ: ÀÌ¸§°ú ³ªÀÌ¸¦ ÃÊ±âÈ­ÇÏÁö ¾ÊÀº °æ¿ì
+    // ê¸°ë³¸ ìƒì„±ì: ì´ë¦„ê³¼ ë‚˜ì´ë¥¼ ì´ˆê¸°í™”í•˜ì§€ ì•Šì€ ê²½ìš°
     Person() {
         name = nullptr;
         age = 0;
@@ -24,14 +24,14 @@ public:
         cout << endl;
     }
 
-    // ¼Ò¸êÀÚ: µ¿ÀûÀ¸·Î ÇÒ´çµÈ ¸Ş¸ğ¸®¸¦ ÇØÁ¦ÇÔ
+    // ì†Œë©¸ì: ë™ì ìœ¼ë¡œ í• ë‹¹ëœ ë©”ëª¨ë¦¬ë¥¼ í•´ì œí•¨
     ~Person() {
-        delete[] name;  // µ¿ÀûÀ¸·Î ÇÒ´çµÈ ¸Ş¸ğ¸®¸¦ ÇØÁ¦
+        delete[] name;  // ë™ì ìœ¼ë¡œ í• ë‹¹ëœ ë©”ëª¨ë¦¬ë¥¼ í•´ì œ
         cout << "Called Destructor!" << endl;
         cout << endl;
     }
 
-    // ÀÌ¸§°ú ³ªÀÌ¸¦ ¼³Á¤ÇÏ´Â ÇÔ¼ö
+    // ì´ë¦„ê³¼ ë‚˜ì´ë¥¼ ì„¤ì •í•˜ëŠ” í•¨ìˆ˜
     void SetPersonInfo(const char* myname, int myage) {
         int len = static_cast<int>(strlen(myname)) + 1;
         name = new char[len];
@@ -39,7 +39,7 @@ public:
         age = myage;
     }
 
-    // °´Ã¼ÀÇ Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ÇÔ¼ö
+    // ê°ì²´ì˜ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
     void ShowPersonInfo() const {
         cout << "Name: " << name << ", ";
         cout << "Age: " << age << endl;
@@ -50,25 +50,25 @@ public:
 };
 
 int main(void) {
-    Person* parr[3];  // Person °´Ã¼ Æ÷ÀÎÅÍ ¹è¿­ ¼±¾ğ
+    Person* parr[3];  // Person ê°ì²´ í¬ì¸í„° ë°°ì—´ ì„ ì–¸
     char namestr[100];
     int age;
 
-    // »ç¿ëÀÚ·ÎºÎÅÍ ÀÌ¸§°ú ³ªÀÌ¸¦ ÀÔ·Â¹Ş¾Æ °´Ã¼ Á¤º¸ ¼³Á¤
+    // ì‚¬ìš©ìë¡œë¶€í„° ì´ë¦„ê³¼ ë‚˜ì´ë¥¼ ì…ë ¥ë°›ì•„ ê°ì²´ ì •ë³´ ì„¤ì •
     for (int i = 0; i < 3; i++) {
         cout << "Name: " << endl;
         cin >> namestr;
         cout << "Age: " << endl;
         cin >> age;
         cout << endl;
-        parr[i] = new Person(namestr, age);  // Person °´Ã¼¸¦ µ¿ÀûÀ¸·Î »ı¼ºÇÏ¿© Æ÷ÀÎÅÍ ¹è¿­¿¡ ÀúÀå (Èü¿µ¿ª¿¡ °´Ã¼¸¦ »ı¼º)
+        parr[i] = new Person(namestr, age);  // Person ê°ì²´ë¥¼ ë™ì ìœ¼ë¡œ ìƒì„±í•˜ì—¬ í¬ì¸í„° ë°°ì—´ì— ì €ì¥ (í™ì˜ì—­ì— ê°ì²´ë¥¼ ìƒì„±)
     }
 
-    parr[0]->ShowPersonInfo();  // °´Ã¼ Á¤º¸ Ãâ·Â = °´Ã¼Æ÷ÀÎÅÍ¸¦ °¡Áö°í ¸â¹ö¿¡ Á¢±Ù( -> )
-    parr[1]->ShowPersonInfo();  // °´Ã¼ Á¤º¸ Ãâ·Â
-    parr[2]->ShowPersonInfo();  // °´Ã¼ Á¤º¸ Ãâ·Â
+    parr[0]->ShowPersonInfo();  // ê°ì²´ ì •ë³´ ì¶œë ¥ = ê°ì²´í¬ì¸í„°ë¥¼ ê°€ì§€ê³  ë©¤ë²„ì— ì ‘ê·¼( -> )
+    parr[1]->ShowPersonInfo();  // ê°ì²´ ì •ë³´ ì¶œë ¥
+    parr[2]->ShowPersonInfo();  // ê°ì²´ ì •ë³´ ì¶œë ¥
 
-    // delete ¿¬»êÀÚ¸¦ »ç¿ëÇÏ¿© ¸Ş¸ğ¸®¸¦ ÇØÁ¦
+    // delete ì—°ì‚°ìë¥¼ ì‚¬ìš©í•˜ì—¬ ë©”ëª¨ë¦¬ë¥¼ í•´ì œ
     delete parr[0];
     delete parr[1];
     delete parr[2];

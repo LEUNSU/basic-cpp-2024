@@ -18,7 +18,7 @@ IoT 개발자 심화 프로그래밍 언어 학습 리포지토리
 		- for(초기식; 조건식; 증감식)
 
 ## 2일차
-- Default Value
+- Default Value		
 - Reference 함수
 	- 반환형 Reference Type
 - Name Space

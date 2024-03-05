@@ -16,27 +16,27 @@ int main(void)
 
 /*using namespace std;
 
-int Adder(int num1 = 1, int num2 = 2);	// ÇÔ¼ö ¼±¾ğ
+int Adder(int num1 = 1, int num2 = 2);	// í•¨ìˆ˜ ì„ ì–¸
 
-int Adder(int num1, int num2)		// ÇÔ¼ö Á¤ÀÇ
+int Adder(int num1, int num2)		// í•¨ìˆ˜ ì •ì˜
 {
 	return num1 + num2;
 }
 
 int main(void)
 {
-	std::cout << Adder() << std::endl;	// ÇÔ¼ö È£Ãâ : Adder()
+	std::cout << Adder() << std::endl;	// í•¨ìˆ˜ í˜¸ì¶œ : Adder()
 	std::cout << Adder(5) << std::endl;
 	std::cout << Adder(3, 5) << std::endl;
 	return 0;
 }*/
 
-// Å¬·¡½º ¾È¿¡ µé¾î°¡´Â ÇÔ¼ö¸¦ ¸Ş¼­µå¶ó°í ºÎ¸¥´Ù.
-// È£ÃâÇÏ´Â °Í ¾Æ·¡¿¡ Á¤ÀÇ¸¦ ÀÛ¼ºÇÒ °æ¿ì, ¼±¾ğ Á¦ÀÏ À§¿¡ ÀÛ¼º.
+// í´ë˜ìŠ¤ ì•ˆì— ë“¤ì–´ê°€ëŠ” í•¨ìˆ˜ë¥¼ ë©”ì„œë“œë¼ê³  ë¶€ë¥¸ë‹¤.
+// í˜¸ì¶œí•˜ëŠ” ê²ƒ ì•„ë˜ì— ì •ì˜ë¥¼ ì‘ì„±í•  ê²½ìš°, ì„ ì–¸ ì œì¼ ìœ„ì— ì‘ì„±.
 
 /*using namespace std;
 
-int Adder(int num1 = 1, int num2 = 2);	// ÇÔ¼ö ¼±¾ğ
+int Adder(int num1 = 1, int num2 = 2);	// í•¨ìˆ˜ ì„ ì–¸
 
 void Func() {
 	cout << "Hi" << endl;
@@ -44,13 +44,13 @@ void Func() {
 
 int main(void)
 {
-	std::cout << Adder() << std::endl;	// ÇÔ¼ö È£Ãâ : Adder()
+	std::cout << Adder() << std::endl;	// í•¨ìˆ˜ í˜¸ì¶œ : Adder()
 	Func();
 
 	return 0;
 }
 
-int Adder(int num1, int num2)		// ÇÔ¼ö Á¤ÀÇ
+int Adder(int num1, int num2)		// í•¨ìˆ˜ ì •ì˜
 {
 	return num1 + num2;
 }

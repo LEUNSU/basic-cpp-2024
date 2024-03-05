@@ -3,7 +3,7 @@ using namespace std;
 
 namespace CAR_CONST
 {
-	enum MyEnum							// ¿­°ÅÇü
+	enum MyEnum							// ì—´ê±°í˜•
 	{
 		ID_LEN		= 20,
 		MAX_SPD		= 200,
@@ -15,22 +15,22 @@ namespace CAR_CONST
 
 struct Car
 {	
-	//================¸â¹öº¯¼ö================
+	//================ë©¤ë²„ë³€ìˆ˜================
 	char gamerID[CAR_CONST::ID_LEN];	// char game ID[20];
 	int fuelGauge;
 	int curSpeed;
 
-	//================¸â¹öÇÔ¼ö================
-	void ShowCarState();				// »óÅÂÁ¤º¸, Ãâ·Â
-	void Accel();						// ¿¢¼¿, ¼ÓµµÁõ°¡
-	void Break();						// ºê·¹ÀÌÅ©, ¼Óµµ°¨¼Ò
+	//================ë©¤ë²„í•¨ìˆ˜================
+	void ShowCarState();				// ìƒíƒœì •ë³´, ì¶œë ¥
+	void Accel();						// ì—‘ì…€, ì†ë„ì¦ê°€
+	void Break();						// ë¸Œë ˆì´í¬, ì†ë„ê°ì†Œ
 };
 
 void Car::ShowCarState()
 {
-	cout << "¼ÒÀ¯ÀÚID: " << gamerID << endl;
-	cout << "¿¬·á·®: " << fuelGauge << "%" << endl;
-	cout << "ÇöÀç¼Óµµ: " << curSpeed << "km/s" << endl << endl;
+	cout << "ì†Œìœ ìID: " << gamerID << endl;
+	cout << "ì—°ë£ŒëŸ‰: " << fuelGauge << "%" << endl;
+	cout << "í˜„ì¬ì†ë„: " << curSpeed << "km/s" << endl << endl;
 }
 
 void Car::Accel()

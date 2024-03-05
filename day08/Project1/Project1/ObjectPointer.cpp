@@ -1,5 +1,5 @@
 /*
-Person* ptr;				// PersonÅ¸ÀÔÀÇ °´Ã¼ Æ÷ÀÎÅÍ ¼±¾ğ
+Person* ptr;				// Personíƒ€ì…ì˜ ê°ì²´ í¬ì¸í„° ì„ ì–¸
 Person* ptr = new Person;	// o
 Person p = new Person();	// x
 */
@@ -16,7 +16,7 @@ class Student : public Person
 {
 public:
 	void Study() { cout << "Study" << endl; }
-	// void Sleep() { cout << "Student Sleep" << endl; } »ó¼Ó°ü°è¿¡¼­ µ¿ÀÏÇÑ ¸â¹öÇÔ¼ö¸¦ ¾²´Â °Í -> ¿À¹ö·Îµù
+	// void Sleep() { cout << "Student Sleep" << endl; } ìƒì†ê´€ê³„ì—ì„œ ë™ì¼í•œ ë©¤ë²„í•¨ìˆ˜ë¥¼ ì“°ëŠ” ê²ƒ -> ì˜¤ë²„ë¡œë”©
 };
 
 class PartTimeStudent : public Student
@@ -27,20 +27,20 @@ public:
 
 int main(void)
 {	
-	// Student* ptr1 = new Student();	µ¿ÀÏÇÑ Å¸ÀÔÀ¸·Î »ç¿ëÇÏ´Â °ÍÀÌ ¿øÄ¢ÀÌ´Ù.
-	// ºÎ¸ğÅ¸ÀÔÀÇ °´Ã¼ Æ÷ÀÎÅÍ·Î ÀÚ½Ä°´Ã¼¸¦ °¡¸®Å³ ¼ö ÀÖ´Ù. ÇÏÁö¸¸ ÀÚ½Ä°´Ã¼ Æ÷ÀÎÅÍ·Î ºÎ¸ğ°´Ã¼´Â °¡¸®Å³ ¼ö ¾ø´Ù.
+	// Student* ptr1 = new Student();	ë™ì¼í•œ íƒ€ì…ìœ¼ë¡œ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ ì›ì¹™ì´ë‹¤.
+	// ë¶€ëª¨íƒ€ì…ì˜ ê°ì²´ í¬ì¸í„°ë¡œ ìì‹ê°ì²´ë¥¼ ê°€ë¦¬í‚¬ ìˆ˜ ìˆë‹¤. í•˜ì§€ë§Œ ìì‹ê°ì²´ í¬ì¸í„°ë¡œ ë¶€ëª¨ê°ì²´ëŠ” ê°€ë¦¬í‚¬ ìˆ˜ ì—†ë‹¤.
 	Person* ptr1 = new Student();		
 	Person* ptr2 = new PartTimeStudent();
 	Student* ptr3 = new PartTimeStudent();
 	ptr1->Sleep();
-	ptr2->Sleep();	// ±×¸®°í Á¢±ÙÀº °´Ã¼ Æ÷ÀÎÅÍÀÇ Å¸ÀÔÀ» µû¸¥´Ù.
+	ptr2->Sleep();	// ê·¸ë¦¬ê³  ì ‘ê·¼ì€ ê°ì²´ í¬ì¸í„°ì˜ íƒ€ì…ì„ ë”°ë¥¸ë‹¤.
 	ptr3->Study();
 	delete ptr1;delete ptr2;delete ptr3;
 	return 0;
 }
 
 /*
-´ÙÇü¼º
-¿À¹ö·Îµù(Overloading) - ´ÙÁßÁ¤ÀÇ
-¿À¹ö¶óÀÌµù(Overriding) - ÀçÁ¤ÀÇ, »ó¼Ó°ü°è¿¡¼­ »ç¿ë
+ë‹¤í˜•ì„±
+ì˜¤ë²„ë¡œë”©(Overloading) - ë‹¤ì¤‘ì •ì˜
+ì˜¤ë²„ë¼ì´ë”©(Overriding) - ì¬ì •ì˜, ìƒì†ê´€ê³„ì—ì„œ ì‚¬ìš©
 */

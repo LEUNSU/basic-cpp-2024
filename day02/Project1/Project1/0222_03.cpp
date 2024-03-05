@@ -4,7 +4,7 @@
 {
 	void SimpleFunc(void)
 	{
-		std::cout << "BestComÀÌ Á¤ÀÇÇÑ ÇÔ¼ö" << std::endl;
+		std::cout << "BestComì´ ì •ì˜í•œ í•¨ìˆ˜" << std::endl;
 	}
 }
 
@@ -12,7 +12,7 @@ namespace ProgComImp1
 {
 	void SimpleFunc(void)
 	{
-		std::cout << "ProgComÀÌ Á¤ÀÇÇÑ ÇÔ¼ö" << std::endl;
+		std::cout << "ProgComì´ ì •ì˜í•œ í•¨ìˆ˜" << std::endl;
 	}
 }
 
@@ -45,11 +45,11 @@ int main(void)
 
 void BestComImp1::SimpleFunc(void)
 {
-	std::cout << "BestComÀÌ Á¤ÀÇÇÑ ÇÔ¼ö" << std::endl;
+	std::cout << "BestComì´ ì •ì˜í•œ í•¨ìˆ˜" << std::endl;
 }
 
 void ProgComImp1::SimpleFunc(void)
 {
-	std::cout << "ProgComÀÌ Á¤ÀÇÇÑ ÇÔ¼ö" << std::endl;
+	std::cout << "ProgComì´ ì •ì˜í•œ í•¨ìˆ˜" << std::endl;
 }
 */

@@ -18,10 +18,10 @@ public:
 	}
 };
 
-class PermanentWorker : public Employee	// EmployeeÅ¬·¡½º »ó¼Ó
+class PermanentWorker : public Employee	// Employeeí´ë˜ìŠ¤ ìƒì†
 {
 private:
-	int salary;		// ¿ù ±Ş¿©
+	int salary;		// ì›” ê¸‰ì—¬
 public:
 	PermanentWorker(const char* name, int money)
 		: Employee(name), salary(money)
@@ -37,7 +37,7 @@ public:
 	}
 };
 
-class EmployeeHandler	// Employee°´Ã¼
+class EmployeeHandler	// Employeeê°ì²´
 {
 private:
 	Employee* empList[50];
@@ -74,18 +74,18 @@ public:
 
 int main(void)
 {
-	// Á÷¿ø°ü¸®¸¦ ¸ñÀûÀ¸·Î ¼­·ÊµÈ ÄÁÆ®·Ñ Å¬·¡½ºÀÇ °´Ã¼»ı¼º
+	// ì§ì›ê´€ë¦¬ë¥¼ ëª©ì ìœ¼ë¡œ ì„œë¡€ëœ ì»¨íŠ¸ë¡¤ í´ë˜ìŠ¤ì˜ ê°ì²´ìƒì„±
 	EmployeeHandler handler;
 
-	// Á÷¿ø µî·Ï
+	// ì§ì› ë“±ë¡
 	handler.AddEmployee(new PermanentWorker("KIM", 1000));
 	handler.AddEmployee(new PermanentWorker("LEE", 1500));
 	handler.AddEmployee(new PermanentWorker("JUN", 2000));
 
-	// ÀÌ¹ø ´Ş¿¡ ÁöºÒÇØ¾ß ÇÒ ±Ş¿©ÀÇ Á¤º¸
+	// ì´ë²ˆ ë‹¬ì— ì§€ë¶ˆí•´ì•¼ í•  ê¸‰ì—¬ì˜ ì •ë³´
 	handler.ShowAllSalaryInfo();
 
-	// ÀÌ¹ø ´Ş¿¡ ÁöºÒÇØ¾ß ÇÒ ±Ş¿©ÀÇ ÃÑÇÕ
+	// ì´ë²ˆ ë‹¬ì— ì§€ë¶ˆí•´ì•¼ í•  ê¸‰ì—¬ì˜ ì´í•©
 	handler.ShowTotalSalary();
 	return 0;
 }

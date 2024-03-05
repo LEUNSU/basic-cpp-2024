@@ -25,8 +25,8 @@ public:
 
 	void personInfo() const
 	{
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "³ªÀÌ: " << age << endl;
+		cout << "ì´ë¦„: " << name << endl;
+		cout << "ë‚˜ì´: " << age << endl;
 	}
 
 	~Person()
@@ -37,7 +37,7 @@ public:
 
 int main(void)
 {
-	Person p("ÀÌÀº¼ö", 26);
+	Person p("ì´ì€ìˆ˜", 26);
 	p.personInfo();
 
 	Person copyp(p);

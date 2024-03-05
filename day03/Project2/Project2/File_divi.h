@@ -5,7 +5,7 @@
 #include <string>
 
 /*
-Filedivi.h Çì´õ ÆÄÀÏ : ¼±¾ğ
+Filedivi.h í—¤ë” íŒŒì¼ : ì„ ì–¸
 */
 
 class Human
