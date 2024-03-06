@@ -16,7 +16,7 @@ public:
 
 	Number& operator*()
 	{
-		return *this;
+		return *this;	// this는 객체포인터
 	}
 };
 

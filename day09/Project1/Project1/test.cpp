@@ -13,7 +13,7 @@ public :
 	{
 		cout << "value : "<< num << endl;
 	}
-		Myclass operator+(const Myclass& ref)	// 연산자 오버로딩
+	Myclass operator+(const Myclass& ref)	// 연산자 오버로딩
 	{
 			Myclass i(num + ref.num);		// 새로운 객체 i 생성
 			return i;
