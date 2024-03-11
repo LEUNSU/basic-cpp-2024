@@ -178,7 +178,7 @@ int main(void)
             cout << "상품출력" << endl;
             for (int i = 0; i < 100; i++)
             {
-                product[100]->printInfo();
+               
             }
            
         }
