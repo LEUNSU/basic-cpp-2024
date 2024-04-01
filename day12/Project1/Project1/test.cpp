@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <iostream>
 #include <cstring>
+#include <vector>
 
 using namespace std;
 class Product
@@ -10,64 +11,47 @@ class Product
 	string producer;
 public:
     Product(int id, int price, string producer)
-    {
-        this->id = id;
-        this->price = price;
-        this->producer = producer; 
+        : id(id), price(price), producer(producer)
+    {}
+    virtual void printInfo() const {
+        cout << "ID: " << id << ", Price: " << price << ", Producer: " << producer << endl;
     }
-    virtual void printInfo()= 0;
-
-    int getId() 
-    { 
-        return id; 
-    }
-    int getPrice()
-    { 
-        return price; 
-    }
-    string getProducer() 
-    { 
-        return producer; 
-    }
-
 };
 
-//class Book : public Product
-//{
-//private:
-//    string ISBN;
-//    string author;
-//    string title;
-//public: 
-//    Book(int id, int price, string producer, string ISBN, string author, string title)
-//        : Product(id, price, producer)
-//    {
-//        this->ISBN = ISBN;
-//        this->author = author;
-//        this->title = title;
-//    }
-//    void printInfo() const
-//    {
-//        cout << "ISBN: " << ISBN << " Author : " << author << " Title : " << title << endl;
-//    }
-//};
-//class Handphone : public Product
-//{
-//private:
-//    string model;
-//    string RAM;
-//public:
-//    Handphone(int id, int price, string producer, string model, string RAM)
-//        : Product(id, price, producer)
-//    {
-//        this->model = model;  
-//        this->RAM = RAM; 
-//    }
-//    void printInfo() const
-//    {
-//        cout << "model: " << model << " RAM: " << RAM << endl;
-//    }
-//}; 
+class Book : public Product
+{
+private:
+    string ISBN;
+    string author;
+    string title;
+public: 
+    Book(int id, int price, string producer, string ISBN, string author, string title)
+        : Product(id, price, producer), ISBN(ISBN), author(author), title(title)
+    {}
+
+    void printInfo() const
+    {
+        Product::printInfo();
+        cout << "ISBN: " << ISBN << " Author : " << author << " Title : " << title << endl;
+    }
+};
+class Handphone : public Product
+{
+private:
+    string model;
+    string RAM;
+public:
+    Handphone(int id, int price, string producer, string model, string RAM)
+        : Product(id, price, producer)
+    {
+        this->model = model;  
+        this->RAM = RAM; 
+    }
+    void printInfo() const
+    {
+        cout << "model: " << model << " RAM: " << RAM << endl;
+    }
+}; 
 class Computer : public Product
 {
 private:
@@ -105,11 +89,8 @@ void Computer::printInfo()
 
 int main(void)
 {
-    Product* product[100];
+    vector<Product*> products;
 
-    int id;
-    int price;
-    string producer;
     int menu;
    
     while (true)
@@ -136,7 +117,7 @@ int main(void)
             cout << "Producer: ";
             cin >> producer;
 
-            /*if (choice == 1)
+            if (choice == 1)
             {
                 string ISBN, author, title;
                 cout << "ISBN: ";
@@ -145,21 +126,19 @@ int main(void)
                 cin >> author;
                 cout << "Title: : ";
                 cin >> title;
-                Book* b = new Book(id, price, producer, ISBN, author, title);
-                product[100] = b;
+                products.push_back(new Book(id, price, producer, ISBN, author, title));               
             }
-            if (choice == 2)
+            else if (choice == 2)
             {
                 string model, RAM;
                 cout << "Model: ";
                 cin >> model;
                 cout << "RAM: ";
                 cin >> RAM;
-                Handphone* h = new Handphone(id, price, producer, model, RAM);
-                product[100] = h;
-
-            }*/
-            if (choice ==3)
+                products.push_back(new Handphone(id, price, producer, model, RAM));
+               
+            }
+            else if (choice ==3)
             {
                 string model, cpu, RAM;
                 cout << "Model: ";
@@ -168,29 +147,34 @@ int main(void)
                 cin >> cpu; 
                 cout << "RAM: ";
                 cin >> RAM;
-                Computer* c = new Computer(id, price, producer, model, cpu, RAM);
-                product[100] = c;
-                
+                products.push_back(new Computer(id, price, producer, model, cpu, RAM));
+
             }
         }
         else if (menu == 2)
         {
             cout << "상품출력" << endl;
-            for (int i = 0; i < 100; i++)
+            for (Product* p : products)
             {
-               
+                p->printInfo();
             }
            
         }
-        /*else if (menu == 3)
+        else if (menu == 3)
         {
 
         }
         else if (menu == 0)
         {
             cout << "프로그램 종료" << endl;
+            
+            for (Product* p : products) // 동적 할당된 메모리 해제
+            {
+                delete p;
+            }
+
             break;
-        }*/
+        }
 
 
 
